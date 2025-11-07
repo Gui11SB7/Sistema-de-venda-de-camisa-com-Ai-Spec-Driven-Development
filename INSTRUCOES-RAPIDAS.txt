@@ -1,0 +1,151 @@
+================================================================================
+                         INSTRUCOES RAPIDAS
+                    Sistema de Vendas de Camisas
+================================================================================
+
+PARA DESENVOLVEDORES/TECNICOS:
+================================================================================
+
+1. GERAR O EXECUTAVEL (primeira vez):
+   
+   .\gerar-executavel.bat
+   
+   Aguarde alguns minutos. O arquivo SistemaVendasCamisas.jar sera criado.
+
+2. PREPARAR PARA DISTRIBUICAO:
+   
+   .\preparar-distribuicao.bat
+   
+   Uma pasta "Distribuicao" sera criada com tudo que o usuario precisa.
+
+3. DISTRIBUIR:
+   
+   - Comprima a pasta "Distribuicao" em um arquivo ZIP
+   - Envie para os usuarios
+   - Instrua-os a extrair e dar duplo clique em "Iniciar Sistema.bat"
+
+================================================================================
+
+PARA USUARIOS FINAIS:
+================================================================================
+
+1. INSTALAR JAVA (se nao tiver):
+   
+   Acesse: https://www.java.com/pt-BR/download/
+   Baixe e instale
+
+2. INICIAR O SISTEMA:
+   
+   De duplo clique em: "Iniciar Sistema.bat"
+   
+   OU
+   
+   De duplo clique em: "SistemaVendasCamisas.jar"
+
+3. USAR O SISTEMA:
+   
+   Consulte: MANUAL-USUARIO.md
+
+================================================================================
+
+ESTRUTURA DE ARQUIVOS:
+================================================================================
+
+Para Desenvolvimento:
+  - src/                          -> Codigo fonte
+  - pom.xml                       -> Configuracao Maven
+  - gerar-executavel.bat          -> Gera o JAR
+  - preparar-distribuicao.bat     -> Prepara pacote
+
+Para Distribuicao (pasta Distribuicao/):
+  - SistemaVendasCamisas.jar      -> Executavel
+  - Iniciar Sistema.bat           -> Atalho
+  - MANUAL-USUARIO.md             -> Manual
+  - LEIA-ME.txt                   -> Instrucoes
+  - GUIA-INSTALACAO-SIMPLES.md    -> Guia
+
+Gerado Automaticamente:
+  - vendas_camisas.db             -> Banco de dados
+
+================================================================================
+
+COMANDOS UTEIS:
+================================================================================
+
+Gerar executavel:
+  .\gerar-executavel.bat
+
+Preparar distribuicao:
+  .\preparar-distribuicao.bat
+
+Executar aplicacao (desenvolvimento):
+  .\executar-aplicacao.bat
+
+Executar testes:
+  .\executar-testes-simples.bat
+
+Compilar projeto:
+  mvn clean compile
+
+Criar JAR:
+  mvn clean package
+
+================================================================================
+
+REQUISITOS:
+================================================================================
+
+Para Desenvolvimento:
+  - Java JDK 8+
+  - Maven 3.6+
+
+Para Usuario Final:
+  - Java JRE 8+
+  - Windows 7+
+
+================================================================================
+
+BACKUP:
+================================================================================
+
+Fazer backup:
+  1. Feche o sistema
+  2. Copie "vendas_camisas.db"
+  3. Guarde em local seguro
+
+Restaurar backup:
+  1. Feche o sistema
+  2. Substitua "vendas_camisas.db"
+  3. Abra o sistema
+
+================================================================================
+
+PROBLEMAS COMUNS:
+================================================================================
+
+"Java nao encontrado":
+  -> Instale Java: https://www.java.com/pt-BR/download/
+
+"Arquivo nao abre":
+  -> Use "Iniciar Sistema.bat"
+  -> Ou: java -jar SistemaVendasCamisas.jar
+
+"Erro ao salvar":
+  -> Execute como administrador
+
+"Sistema lento":
+  -> Feche outros programas
+  -> Reinicie o computador
+
+================================================================================
+
+DOCUMENTACAO COMPLETA:
+================================================================================
+
+- MANUAL-USUARIO.md              -> Manual para usuarios
+- GUIA-INSTALACAO-SIMPLES.md     -> Guia de instalacao
+- COMO-USAR-APLICACAO.md         -> Guia detalhado de uso
+- TESTES.md                      -> Documentacao de testes
+- README.md                      -> Informacoes tecnicas
+
+================================================================================

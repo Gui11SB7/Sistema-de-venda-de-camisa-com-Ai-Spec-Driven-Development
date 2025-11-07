@@ -1,0 +1,90 @@
+================================================================================
+                    SISTEMA DE VENDAS DE CAMISAS
+                           Versao 1.0.0
+================================================================================
+
+COMO USAR:
+
+1. Certifique-se de ter Java instalado
+   Download: https://www.java.com/pt-BR/download/
+
+2. De duplo clique em "Iniciar Sistema.bat"
+   OU
+   De duplo clique em "SistemaVendasCamisas.jar"
+
+3. Pronto! O sistema abrira automaticamente
+
+================================================================================
+
+ARQUIVOS IMPORTANTES:
+
+- Iniciar Sistema.bat       -> Clique aqui para abrir o sistema
+- SistemaVendasCamisas.jar  -> Arquivo executavel principal
+- MANUAL-USUARIO.md         -> Manual completo de uso
+- vendas_camisas.db         -> Seus dados (NAO DELETE!)
+
+================================================================================
+
+FUNCIONALIDADES:
+
+✓ Cadastrar produtos (camisas) no estoque
+✓ Adicionar fotos dos produtos
+✓ Registrar vendas
+✓ Cadastrar e gerenciar clientes
+✓ Controlar pagamentos
+✓ Ver saldo devedor de cada cliente
+✓ Painel financeiro com lucro/prejuizo
+✓ Todos os dados salvos automaticamente
+
+================================================================================
+
+BACKUP DOS DADOS:
+
+Para fazer backup:
+1. Feche o sistema
+2. Copie o arquivo "vendas_camisas.db"
+3. Guarde em local seguro
+
+Para restaurar backup:
+1. Feche o sistema
+2. Substitua "vendas_camisas.db" pelo backup
+3. Abra o sistema novamente
+
+================================================================================
+
+REQUISITOS:
+
+- Windows 7 ou superior
+- Java JRE 8 ou superior
+- 512 MB de RAM
+- 50 MB de espaco em disco
+
+================================================================================
+
+PROBLEMAS?
+
+Sistema nao abre:
+  -> Instale o Java: https://www.java.com/pt-BR/download/
+
+Nao consigo salvar:
+  -> Execute como administrador (botao direito -> Executar como administrador)
+
+Mais ajuda:
+  -> Consulte MANUAL-USUARIO.md
+
+================================================================================
+
+SUPORTE:
+
+Para mais informacoes, consulte:
+- MANUAL-USUARIO.md (manual completo)
+- GUIA-INSTALACAO-SIMPLES.md (guia de instalacao)
+- COMO-USAR-APLICACAO.md (guia detalhado)
+
+================================================================================
+
+Desenvolvido com Java + Swing + SQLite
+Versao: 1.0.0
+Data: 2025-11-07
+
+================================================================================

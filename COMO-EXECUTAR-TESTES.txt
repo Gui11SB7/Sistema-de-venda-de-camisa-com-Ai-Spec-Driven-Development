@@ -1,0 +1,102 @@
+================================================================================
+  INSTRUÇÕES PARA EXECUTAR OS TESTES - Sistema de Vendas de Camisas
+================================================================================
+
+IMPORTANTE: Execute estes comandos no terminal onde Java e Maven funcionam!
+
+================================================================================
+OPÇÃO 1: Usando o Script Batch (Mais Fácil)
+================================================================================
+
+1. Abra o terminal onde Maven funciona
+2. Navegue até a pasta do projeto
+3. Execute:
+   
+   executar-testes-simples.bat
+   
+   OU
+   
+   executar-testes.bat
+
+================================================================================
+OPÇÃO 2: Comandos Maven Diretos
+================================================================================
+
+1. Compile o projeto:
+   
+   mvn clean compile
+
+2. Execute os testes:
+   
+   java -cp "target/classes;%USERPROFILE%/.m2/repository/org/xerial/sqlite-jdbc/3.42.0.0/sqlite-jdbc-3.42.0.0.jar" com.vendas.TesteSistema
+
+================================================================================
+O QUE OS TESTES FAZEM
+================================================================================
+
+Os testes automatizados validam:
+
+✓ TESTE 11.1 - Fluxo Completo de Cadastro e Venda
+  - Cadastra produtos com e sem imagem
+  - Verifica lista de produtos disponíveis
+  - Registra vendas
+  - Valida remoção do estoque
+  - Verifica cálculos financeiros
+
+✓ TESTE 11.2 - Gerenciamento de Clientes e Pagamentos
+  - Cadastra clientes
+  - Registra múltiplas vendas para o mesmo cliente
+  - Calcula saldo devedor
+  - Registra pagamentos parciais e totais
+  - Valida atualização de saldo
+
+✓ TESTE 11.3 - Persistência de Dados
+  - Cadastra dados diversos
+  - Simula fechamento e reabertura
+  - Verifica manutenção dos dados
+  - Testa com imagens grandes (1MB)
+
+✓ TESTE 11.4 - Validações e Tratamento de Erros
+  - Tenta cadastrar dados inválidos
+  - Verifica rejeição de campos obrigatórios
+  - Testa valores negativos e nulos
+  - Valida mensagens de erro
+
+================================================================================
+RESULTADO ESPERADO
+================================================================================
+
+Se tudo estiver funcionando corretamente, você verá:
+
+=================================================
+  RESUMO DOS TESTES
+=================================================
+Total de testes: 45
+Passaram: 45 ✓
+Falharam: 0 ✗
+Taxa de sucesso: 100%
+=================================================
+
+✓ TODOS OS TESTES PASSARAM!
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Se encontrar erros:
+
+1. Verifique se está no terminal correto (onde Maven funciona)
+2. Verifique se está na pasta raiz do projeto
+3. Delete o arquivo vendas.db se existir e tente novamente
+4. Verifique os logs de erro para mais detalhes
+
+================================================================================
+ARQUIVOS CRIADOS
+================================================================================
+
+✓ TesteSistema.java - Classe com todos os testes automatizados
+✓ executar-testes.bat - Script para executar os testes facilmente
+✓ TESTES.md - Documentação completa dos testes
+✓ Este arquivo - Instruções rápidas
+
+================================================================================

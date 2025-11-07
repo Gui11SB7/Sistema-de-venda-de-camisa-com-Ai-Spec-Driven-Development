@@ -1,0 +1,85 @@
+================================================================================
+  SOLUÇÃO RÁPIDA - Executar Testes no Windows
+================================================================================
+
+PROBLEMA: O comando mvn exec:java não funciona corretamente no Windows CMD
+
+SOLUÇÃO: Use um dos métodos abaixo
+
+================================================================================
+MÉTODO 1: Script Simples (RECOMENDADO)
+================================================================================
+
+Execute:
+    executar-testes-simples.bat
+
+Este script:
+1. Compila o projeto
+2. Executa os testes usando Java diretamente
+
+================================================================================
+MÉTODO 2: Comandos Manuais
+================================================================================
+
+1. Compile:
+   mvn clean compile
+
+2. Execute:
+   java -cp "target/classes;%USERPROFILE%/.m2/repository/org/xerial/sqlite-jdbc/3.42.0.0/sqlite-jdbc-3.42.0.0.jar" com.vendas.TesteSistema
+
+================================================================================
+MÉTODO 3: Usando PowerShell (se preferir)
+================================================================================
+
+1. Abra PowerShell
+2. Compile:
+   mvn clean compile
+
+3. Execute:
+   java -cp "target/classes;$env:USERPROFILE/.m2/repository/org/xerial/sqlite-jdbc/3.42.0.0/sqlite-jdbc-3.42.0.0.jar" com.vendas.TesteSistema
+
+================================================================================
+MÉTODO 4: Criar JAR e Executar
+================================================================================
+
+1. Crie o JAR:
+   mvn clean package
+
+2. Execute:
+   java -jar target/sistema-vendas-camisas-1.0.0.jar
+
+   (Nota: Isso executa o Main, não os testes)
+
+================================================================================
+VERIFICAÇÃO
+================================================================================
+
+Se tudo funcionar, você verá:
+
+=================================================
+  SISTEMA DE VENDAS DE CAMISAS - TESTES
+=================================================
+
+Inicializando banco de dados de teste...
+✓ Banco de dados inicializado
+
+=================================================
+  TESTE 11.1: Fluxo Completo de Cadastro e Venda
+=================================================
+
+✓ Cadastrar cliente para vendas
+✓ Cadastrar produto SEM imagem
+...
+
+=================================================
+  RESUMO DOS TESTES
+=================================================
+Total de testes: 37+
+Passaram: 37+ ✓
+Falharam: 0 ✗
+Taxa de sucesso: 100%
+=================================================
+
+✓ TODOS OS TESTES PASSARAM!
+
+================================================================================
